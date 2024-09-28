@@ -4,8 +4,6 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { Reflector, Text, useTexture, useGLTF } from '@react-three/drei'
 import './styles.css'
 
-
-
 export default function App() {
   return (
     <Canvas concurrent gl={{ alpha: false }} pixelRatio={[1, 1.5]} camera={{ position: [0, 3, 100], fov: 15 }}>
