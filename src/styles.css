@@ -117,5 +117,12 @@ canvas {
   touch-action: none;
   animation: fade-in 2s ease 0.5s forwards;
 }
+.speaker-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
 
 
