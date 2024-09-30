@@ -40,6 +40,10 @@ export default function App() {
 
   return (
     <>
+    <div className='canvas-container'>
+      <div className='logo'>
+        <img src="/logo-transparent.png" alt="" width={150} height={150}/>
+      </div>
       <Canvas
         concurrent
         gl={{ alpha: false }}
@@ -59,8 +63,10 @@ export default function App() {
           <Intro />
         </Suspense>
       </Canvas>
-
+    </div>
+      
       <div className="speaker-icon" onClick={toggleMute}>
+        
         {isMuted ? <FaVolumeMute size={30} color="white" /> : <FaVolumeUp size={30} color="white" />}
       </div>
     </>
